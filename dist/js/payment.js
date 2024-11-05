@@ -1,0 +1,1 @@
+let cardNumInput=document.querySelector("#cardNum");cardNumInput.addEventListener("keyup",()=>{let e=cardNumInput.value;e=e.replace(/\s/g,""),Number(e)&&(e=(e=e.match(/.{1,4}/g)).join(" "),cardNumInput.value=e)});
